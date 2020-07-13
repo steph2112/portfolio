@@ -128,11 +128,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 400;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  font-weight: bold;
+ 
 }
 
 #header .logo a {
-  color: #222222;
+  color: #000000;
 }
 
 #header .logo img {
