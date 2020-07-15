@@ -1271,9 +1271,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: #48CFD6;
   padding: 30px 0;
-  color: #222222;
+  color: #fff;
   font-size: 14px;
   text-align: center;
 }
@@ -1284,5 +1284,5 @@ section {
 }
 
 #footer .credits a {
-  color: #48CFD6;
+  color: #fff;
 }
