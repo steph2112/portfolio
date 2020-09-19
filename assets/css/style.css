@@ -1300,3 +1300,55 @@ section {
 #footer .credits a {
   color: #fff;
 }
+
+.cover-presentation {
+  background: #f9e6ec;
+  padding: 120px 30px 70px;
+  transition: all 0.25s;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cover-presentation h1 {
+  margin: 10px 0 0;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #000000;
+  text-shadow: 2px 2px #48cfd628;
+}
+.cover-presentation p {
+  margin-top: 30px;
+  line-height: 1.75;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+
+.cover-presentation-panel {
+  width: 48%;
+}
+
+.cover-presentation-panel img {
+  width: 100%;
+  height: auto;
+  transition: all 0.65s;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 769px) {
+  .cover-presentation {
+    padding-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .cover-presentation-panel {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
