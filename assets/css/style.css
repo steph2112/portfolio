@@ -1376,6 +1376,7 @@ section {
 .panel-details-problem-panel-info {
   width: 60%;
 }
+
 .panel-details-problem-panel-info h5 {
   width: 100%;
   letter-spacing: 1px;
@@ -1412,9 +1413,47 @@ section {
 .panel-details-problem-panel-image {
   width: 35%;
 }
+
 .panel-details-problem-panel-image img {
   margin: 65px;
   width: 100%;
+}
+
+.panel-details-problem-panel-details {
+  width: 40%;
+}
+
+.panel-details-problem-panel-details h4 {
+  margin-top: 75px;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.panel-details-problem-panel-details p {
+  margin-top: 20px;
+  line-height: 1.75;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+  font-weight: 100;
+}
+
+.panel-details-problem-panel-details-img-left {
+  margin-left: 15%;
+  margin-right: 0;
+}
+
+.panel-details-problem-panel-details-img {
+  width: 45%;
+  margin-left: auto;
+  margin-right: 15%;
+}
+
+.panel-details-problem-panel-details-img img,
+.panel-details-problem-panel-details-img-left img {
+  width: 100%;
+  height: 100%;
 }
 
 .panel-details-wrapper {
@@ -1467,7 +1506,18 @@ section {
   .panel-details-problem-panel-image {
     display: none;
   }
-  .panel-details-problem-panel-info {
+
+  .panel-details-problem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .panel-details-problem-panel-info,
+  .panel-details-problem-panel-details,
+  .panel-details-problem-panel-details-img,
+  .panel-details-problem-panel-details-img-left {
     width: 100%;
   }
 }
