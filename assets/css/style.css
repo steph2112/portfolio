@@ -1128,6 +1128,7 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
+  text-align: justify;
 }
 
 .contact .info i {
@@ -1153,15 +1154,10 @@ section {
 }
 
 .contact .info p {
-  padding: 0 0 0 60px;
+  padding: 10px 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
   color: #555555;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
 }
 
 .contact .info .email:hover i,
