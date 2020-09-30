@@ -1301,7 +1301,7 @@ section {
 # Cover presentation
 --------------------------------------------------------------*/
 .cover-presentation {
-  background: #EBFFF0;
+  background: #ebfff0;
   padding: 120px 30px 70px;
   transition: all 0.25s;
   display: flex;
@@ -1403,6 +1403,18 @@ section {
   vertical-align: top;
   margin-top: 11px;
   margin-right: 10px;
+}
+
+.panel-details-problem-panel-info-image-container {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.panel-details-problem-panel-info-image {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .panel-details-problem-panel-image {
