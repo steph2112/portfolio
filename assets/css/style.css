@@ -1301,7 +1301,7 @@ section {
 # Cover presentation
 --------------------------------------------------------------*/
 .cover-presentation {
-  background: #f9e6ec;
+  background: #EBFFF0;
   padding: 120px 30px 70px;
   transition: all 0.25s;
   display: flex;
@@ -1334,7 +1334,6 @@ section {
   width: 100%;
   height: auto;
   transition: all 0.65s;
-  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
