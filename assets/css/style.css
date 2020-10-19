@@ -1541,3 +1541,7 @@ section {
 .video-container iframe {
   margin: 0 auto;
 }
+
+.infogram-embed {
+  width: 100%;
+}
