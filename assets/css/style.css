@@ -1372,6 +1372,10 @@ section {
   width: 60%;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .panel-details-problem-panel-info h5 {
   width: 100%;
   letter-spacing: 1px;
@@ -1527,4 +1531,13 @@ section {
   .panel-details-problem-panel-details-img-left {
     width: 100%;
   }
+}
+
+.video-container {
+  display: flex;
+  text-align: center;
+}
+
+.video-container iframe {
+  margin: 0 auto;
 }
