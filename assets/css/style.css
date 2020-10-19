@@ -1310,16 +1310,6 @@ section {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-  .cover-presentation_2 {
-    background: #F1F5FF;
-    padding: 120px 30px 70px;
-    transition: all 0.25s;
-    display: flex;
-    position: relative;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
 
 .cover-presentation h1 {
   margin: 10px 0 0;
