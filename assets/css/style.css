@@ -1311,6 +1311,10 @@ section {
   justify-content: space-between;
 }
 
+.cover-presentation.blue {
+  background: #001a53;
+}
+
 .cover-presentation h1 {
   margin: 10px 0 0;
   font-size: 35px;
@@ -1319,12 +1323,19 @@ section {
   color: #000000;
   text-shadow: 2px 2px #48cfd628;
 }
+
+.cover-presentation.blue h1,
+.cover-presentation.blue p {
+  color: white;
+}
+
 .cover-presentation p {
   margin-top: 30px;
   line-height: 1.75;
   font-size: 17px;
   letter-spacing: 0.01em;
 }
+
 
 .cover-presentation-panel {
   width: 48%;
@@ -1355,7 +1366,7 @@ section {
 # Details Project
 --------------------------------------------------------------*/
 .panel-details {
-  padding: 50px 30px;
+  padding: 55px 30px;
   transition: all 0.25s;
   display: flex;
   position: relative;
