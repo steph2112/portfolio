@@ -1312,7 +1312,7 @@ section {
 }
 
 .cover-presentation.blue {
-  background: #001a53;
+  background: #d7edf5;
 }
 
 .cover-presentation h1 {
@@ -1322,11 +1322,6 @@ section {
   line-height: 56px;
   color: #000000;
   text-shadow: 2px 2px #48cfd628;
-}
-
-.cover-presentation.blue h1,
-.cover-presentation.blue p {
-  color: white;
 }
 
 .cover-presentation p {
