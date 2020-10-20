@@ -1315,6 +1315,11 @@ section {
   background: #d7edf5;
 }
 
+.cover-presentation.purple {
+  background: #b1c1f2;
+}
+
+
 .cover-presentation h1 {
   margin: 10px 0 0;
   font-size: 35px;
@@ -1422,7 +1427,7 @@ section {
 .panel-details-problem-panel-info-image-container {
   width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .panel-details-problem-panel-info-image {
@@ -1556,4 +1561,12 @@ section {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+}
+
+.public-sans-font {
+ font-family: 'Public Sans', sans-serif;
+}
+
+.round-shape {
+  border-radius: 50%;
 }
