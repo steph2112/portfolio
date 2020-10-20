@@ -1355,7 +1355,7 @@ section {
 # Details Project
 --------------------------------------------------------------*/
 .panel-details {
-  padding: 70px 30px;
+  padding: 50px 30px;
   transition: all 0.25s;
   display: flex;
   position: relative;
@@ -1370,6 +1370,10 @@ section {
 
 .panel-details-problem-panel-info {
   width: 60%;
+}
+
+.panel-details-problem-panel-info .full-length {
+  width: 100%;
 }
 
 .full-width {
@@ -1395,7 +1399,7 @@ section {
   margin-top: 30px;
   line-height: 1.75;
   font-weight: 300;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .panel-details-problem-panel-info h5::before {
