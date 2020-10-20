@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display", "Raleway", sans-serif;
 }
 
 #main {
@@ -169,7 +169,7 @@ h6 {
   color: #888888;
   transition: 0.3s;
   font-size: 15px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display", "Raleway", sans-serif;
   font-weight: 600;
 }
 
@@ -1571,3 +1571,4 @@ section {
 .round-shape {
   border-radius: 50%;
 }
+
