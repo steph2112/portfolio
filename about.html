@@ -31,6 +31,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/accordion.css" rel="stylesheet">
 </head>
 
 <body>
@@ -73,10 +74,10 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             <img src="assets/img/aboutme.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
+          <div class="col-lg-8 col-md-8 pt-4 pt-lg-0 content">
             <h3>UI/UX Designer &amp; Telecommunication Engineer</h3>
             <!--             <p class="font-italic">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -115,6 +116,46 @@
         </div>
     </section><!-- End About Section -->
 
+    <section id="faq">
+      <div class="container">
+        <div id="About-Me" class="row">
+          <div class="row">
+
+
+            <h3 class="heading-2 margin-bottom">As UI/UX designer</h3>
+            <div class="accordion-wrapper"><a href="#q1" data-ac-item="q1"
+                class="accordion-item-trigger w-inline-block">
+                <div class="full-width">
+                  <div class="flex-no-wrap">
+                    <div class="question">What do I enjoy the most about being a Product designer?</div>
+                  </div>
+                </div>
+                <div class="open-close-box">
+                  <div
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                    class="vertical"></div>
+                  <div
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                    class="vertical"></div>
+                  <div style="opacity: 1;" class="horizontal"></div>
+                </div>
+              </a>
+              <div style="width: 100%;" class="accordion-item-content animate-slide-in" id="q1">
+                <p class="paragraph-4 margins faqs">Working in an agile environment it’s something that I have
+                  grown to
+                  be
+                  so appreciative for. Ultimately learning to be receptive to other people's feedback and ideas will
+                  only
+                  help in pushing your designs further, so approaching product design with an iterative design mindset
+                  is
+                  incredibly important.<br></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -146,6 +187,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/accordion.js"></script>
 
 </body>
 
