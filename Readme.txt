@@ -1,3 +1,3 @@
-# Steph Briceño Portfolio
+# Steph Briceno Portfolio
 
 Portfolio
