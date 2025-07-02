@@ -1618,3 +1618,54 @@ section {
 .round-shape {
   border-radius: 50%;
 }
+
+.project-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  color: #000;
+  border-radius: 8px;
+  height: 520px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Gradient backgrounds */
+.gradient-1 {
+  background: linear-gradient(90deg, #d3ffe8 0%, #ffeaff 100%);
+}
+
+.gradient-2 {
+  background: linear-gradient(90deg, #e5f1ff 0%, #fdfcff 100%);
+}
+
+.gradient-3 {
+  background: linear-gradient(90deg, #ffe3d0 0%, #fff3e4 100%);
+}
+
+.project-section .text-content {
+  position: absolute;
+  bottom: 30px;
+  max-width: 300px;
+}
+
+.project-section .text-content h4 {
+  color: rgb(100 106 135);
+  font-size: 16px;
+}
+
+.project-section .text-content h2 {
+  color: rgb(22, 30, 71);
+  font-size: 22px;
+}
+
+.project-section .project-section-img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-section-img:hover {
+  height: 110%;
+  width: 110%;
+}
