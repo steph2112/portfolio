@@ -2,8 +2,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Inter", sans-serif;
   color: #444444;
+  background: #f6f5f1;
 }
 
 a {
@@ -45,7 +47,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #f6f5f1;
 }
 
 #preloader:before {
@@ -66,6 +68,7 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -75,6 +78,7 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -113,7 +117,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #ffffff;
+  background: #f6f5f1;
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
   z-index: 997;
   padding: 15px 0;
@@ -153,11 +157,11 @@ h6 {
   list-style: none;
 }
 
-.nav-menu > ul {
+.nav-menu>ul {
   display: flex;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
   padding: 10px 0 10px 28px;
@@ -173,7 +177,7 @@ h6 {
   font-weight: 600;
 }
 
-.nav-menu > ul > li > a:before {
+.nav-menu>ul>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -187,15 +191,15 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .active>a:before {
   visibility: visible;
   width: 25px;
 }
 
 .nav-menu a:hover,
-.nav-menu .active > a,
-.nav-menu li:hover > a {
+.nav-menu .active>a,
+.nav-menu li:hover>a {
   color: #222222;
 }
 
@@ -208,12 +212,12 @@ h6 {
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: #fff;
+  background: #f6f5f1;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
 
-.nav-menu .drop-down:hover > ul {
+.nav-menu .drop-down:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -233,12 +237,12 @@ h6 {
 }
 
 .nav-menu .drop-down ul a:hover,
-.nav-menu .drop-down ul .active > a,
-.nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul .active>a,
+.nav-menu .drop-down ul li:hover>a {
   color: #48cfd6;
 }
 
-.nav-menu .drop-down > a:after {
+.nav-menu .drop-down>a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
@@ -249,17 +253,17 @@ h6 {
   left: calc(100% - 30px);
 }
 
-.nav-menu .drop-down .drop-down:hover > ul {
+.nav-menu .drop-down .drop-down:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
 }
 
-.nav-menu .drop-down .drop-down > a {
+.nav-menu .drop-down .drop-down>a {
   padding-right: 35px;
 }
 
-.nav-menu .drop-down .drop-down > a:after {
+.nav-menu .drop-down .drop-down>a:after {
   content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
@@ -270,10 +274,12 @@ h6 {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
   }
-  .nav-menu .drop-down .drop-down:hover > ul {
+
+  .nav-menu .drop-down .drop-down:hover>ul {
     left: -100%;
   }
-  .nav-menu .drop-down .drop-down > a:after {
+
+  .nav-menu .drop-down .drop-down>a:after {
     content: "\ea9d";
   }
 }
@@ -306,7 +312,7 @@ h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: #f6f5f1;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -330,13 +336,13 @@ h6 {
 }
 
 .mobile-nav a:hover,
-.mobile-nav .active > a,
-.mobile-nav li:hover > a {
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
   color: #48cfd6;
   text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
+.mobile-nav .drop-down>a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 10px;
@@ -344,11 +350,11 @@ h6 {
   right: 15px;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active.drop-down>a:after {
   content: "\eaa1";
 }
 
-.mobile-nav .drop-down > a {
+.mobile-nav .drop-down>a {
   padding-right: 35px;
 }
 
@@ -418,14 +424,28 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/hero-bg.jpg") top right;
+  height: min-content;
+  margin-top: 100px;
+  /* background: url("../img/hero-bg.jpg") top right; */
   background-size: cover;
+  font-family: "Inter", sans-serif;
+  text-align: center;
 }
 
 #hero .container {
   padding-top: 70px;
   position: relative;
+  max-width: 500px;
+  width: 500px;
+  padding: 0 0 24px;
+}
+
+.hero--icon {
+  height: 55px;
+}
+
+.hero__containter--bottom {
+  margin-top: 70px;
 }
 
 @media (max-width: 992px) {
@@ -434,13 +454,26 @@ h6 {
   }
 }
 
+#hero p {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  font-style: normal;
+  margin: 1rem 0;
+}
+
 #hero h1 {
+  font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 130%;
   color: #000000;
   text-shadow: 2px 2px #48cfd628;
+  text-align: center;
+  padding: 10px 0;
 }
 
 #hero h2 {
@@ -449,19 +482,27 @@ h6 {
   font-size: 22px;
 }
 
+#hero h3 {
+  font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
+  color: #000000;
+  margin: 20px 0;
+  font-size: 24px;
+  line-height: 36px;
+}
+
 #hero .btn-about {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
   letter-spacing: 1px;
+  line-height: 140%;
   display: inline-block;
-  padding: 12px 40px;
-  border-radius: 50px;
+  padding: 9px 20px 10px;
+  border-radius: 24px;
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #48cfd6;
+  background: #000000;
 }
 
 #hero .btn-about:hover {
@@ -477,21 +518,24 @@ h6 {
 @media (max-width: 992px) {
   #hero:before {
     content: "";
-    background: rgba(255, 255, 255, 0.8);
+    background: #f6f5f1;
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
   }
+
+  /* 
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
-  }
-  #hero h2 {
+  } */
+
+  /* #hero h2 {
     font-size: 18px;
     line-height: 24px;
-  }
+  } */
 }
 
 /*--------------------------------------------------------------
@@ -804,7 +848,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
+  background: #f6f5f1;
   border: 2px solid #48cfd6;
 }
 
@@ -815,7 +859,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #f6f5f1;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -1107,7 +1151,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -1127,7 +1171,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #f6f5f1;
   text-align: justify;
 }
 
@@ -1169,7 +1213,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #f6f5f1;
 }
 
 .contact .php-email-form .form-group {
@@ -1204,7 +1248,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #f6f5f1;
   text-align: center;
   padding: 15px;
 }
@@ -1259,6 +1303,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1268,6 +1313,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1356,6 +1402,7 @@ section {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
+
   .cover-presentation-panel {
     width: 100%;
     margin-bottom: 10px;
@@ -1565,10 +1612,9 @@ section {
 }
 
 .public-sans-font {
- font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 
 .round-shape {
   border-radius: 50%;
 }
-
