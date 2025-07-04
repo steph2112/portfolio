@@ -423,6 +423,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  /* removed relative positioning; container will handle positioning of flowers */
   width: 100%;
   height: min-content;
   margin-top: 100px;
@@ -430,6 +431,11 @@ h6 {
   background-size: cover;
   font-family: "Lato", sans-serif;
   text-align: center;
+}
+
+/* make the hero container the positioning context for decorative flowers */
+#hero .container {
+  position: relative;
 }
 
 #hero .container {
@@ -577,6 +583,53 @@ h6 {
     font-size: 18px;
     line-height: 24px;
   } */
+}
+
+#hero .flower {
+  position: absolute;
+  font-size: 48px;
+  color: #F4511E;
+  line-height: 1;
+  /* spin once on initial load */
+  animation: hero-spin 1.5s ease-in-out 0s 1;
+}
+
+/* one-time spin keyframes for hero flowers */
+@keyframes hero-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#hero .flower--tl {
+  top: 10px;
+  left: -150px;
+}
+
+#hero .flower--ml {
+  top: 35%;
+  left: -320px;
+}
+
+#hero .flower--bl {
+  width: 114px;
+  height: 114px;
+  bottom: 10px;
+  left: -150px;
+}
+
+#hero .flower--tr {
+  top: 10px;
+  right: -150px;
+}
+
+#hero .flower--mr {
+  top: 35%;
+  right: -320px;
+}
+
+#hero .flower--br {
+  bottom: 10px;
+  right: -150px;
 }
 
 /*--------------------------------------------------------------
@@ -1755,22 +1808,32 @@ section {
   line-height: 1;
 }
 
-.flower--tl {
+.get-in-touch-container .flower--tl {
   top: 20px;
   left: 20px;
 }
 
-.flower--tr {
+.get-in-touch-container .flower--tr {
   top: 20px;
   right: 20px;
 }
 
-.flower--bl {
+.get-in-touch-container .flower--bl {
   bottom: 20px;
   left: 20px;
 }
 
-.flower--br {
+.get-in-touch-container .flower--br {
+  bottom: 20px;
+  right: 20px;
+}
+
+.get-in-touch-container .flower--bl {
+  bottom: 20px;
+  left: 20px;
+}
+
+.get-in-touch-container .flower--br {
   bottom: 20px;
   right: 20px;
 }
