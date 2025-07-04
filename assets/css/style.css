@@ -1706,7 +1706,7 @@ section {
   position: absolute;
   bottom: 30px;
   max-width: 300px;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .project-section .text-content h4 {
@@ -1733,4 +1733,80 @@ section {
 .project-section-img:hover {
   /* scale up 10% to the right/bottom */
   transform: scale(1.1);
+}
+
+.get-in-touch-container {
+  position: relative;
+  background: #F4511E;
+  border-radius: 16px;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.flower {
+  position: absolute;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1;
+}
+
+.flower--tl {
+  top: 20px;
+  left: 20px;
+}
+
+.flower--tr {
+  top: 20px;
+  right: 20px;
+}
+
+.flower--bl {
+  bottom: 20px;
+  left: 20px;
+}
+
+.flower--br {
+  bottom: 20px;
+  right: 20px;
+}
+
+.get-in-touch-content .smiley {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.get-in-touch-content .tagline {
+  font-family: "Libre Baskerville", serif;
+  font-size: 32px;
+  margin-bottom: 16px;
+  letter-spacing: -2%;
+  font-style: regular;
+}
+
+.get-in-touch-content h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 80px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.get-in-touch-content .btn {
+  display: inline-block;
+  background: #fff;
+  color: #F4511E;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 24px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.get-in-touch-content .btn:hover {
+  background: #f0b399;
 }

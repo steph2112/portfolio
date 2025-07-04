@@ -35,7 +35,7 @@
     position: relative;
     flex-direction: row;
     will-change: transform;
-        will-change: transform;
+    will-change: transform;
 }
 
 .carousel--slide {
@@ -50,6 +50,7 @@
     box-shadow: rgb(255, 255, 255) 0px 3px 0px 0px inset;
     width: 428px;
     height: 333px;
+    cursor: pointer;
 
 }
 
