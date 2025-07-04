@@ -1679,11 +1679,12 @@ section {
 .project-section .project-section-img {
   height: 100%;
   width: 100%;
+  /* smooth scale from bottom-right */
+  transition: transform 0.3s ease-in-out;
+  transform-origin: right bottom;
 }
 
 .project-section-img:hover {
-  position: relative;
-  top: -40px;
-  left: -40px;
-  transition: all 0.1s ease-in-out;
+  /* scale up 10% to the right/bottom */
+  transform: scale(1.1);
 }

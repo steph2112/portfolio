@@ -35,6 +35,7 @@
     position: relative;
     flex-direction: row;
     will-change: transform;
+        will-change: transform;
 }
 
 .carousel--slide {
