@@ -441,7 +441,7 @@ h6 {
 }
 
 .hero--icon {
-  height: 55px;
+  height: 24px;
 }
 
 .hero__containter--bottom {
@@ -1103,6 +1103,22 @@ section {
   opacity: 1;
 }
 
+.portofolio--title {
+  margin-bottom: 60px;
+}
+
+.portofolio--title h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.portofolio--title p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1666,6 +1682,8 @@ section {
 }
 
 .project-section-img:hover {
-  height: 110%;
-  width: 110%;
+  position: relative;
+  top: -40px;
+  left: -40px;
+  transition: all 0.1s ease-in-out;
 }
