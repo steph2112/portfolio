@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   /* font-family: "Open Sans", sans-serif; */
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #444444;
   background: #f6f5f1;
 }
@@ -428,7 +428,7 @@ h6 {
   margin-top: 100px;
   /* background: url("../img/hero-bg.jpg") top right; */
   background-size: cover;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
 }
 
@@ -442,6 +442,43 @@ h6 {
 
 .hero--icon {
   height: 24px;
+  display: inline-block;
+  transform-origin: bottom center;
+  transition: transform 0.2s ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-8deg);
+  }
+
+  60% {
+    transform: rotate(14deg);
+  }
+
+  80% {
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hero--icon:hover {
+  animation: wave 1s ease-in-out;
+}
+
+.hero--icon--bottom {
+  height: 40px;
 }
 
 .hero__containter--bottom {
@@ -455,9 +492,10 @@ h6 {
 }
 
 #hero p {
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000000;
   font-size: 18px;
+  font-style: regular;
   font-weight: 400;
   line-height: 140%;
   font-style: normal;
@@ -488,10 +526,11 @@ h6 {
   margin: 20px 0;
   font-size: 24px;
   line-height: 36px;
+  font-style: regular;
 }
 
 #hero .btn-about {
-  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-family: "Lato", "Inter Placeholder", sans-serif;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 1px;
@@ -1645,6 +1684,7 @@ section {
   height: 520px;
   margin-bottom: 50px;
   position: relative;
+  overflow: hidden;
 }
 
 /* Gradient backgrounds */
@@ -1682,6 +1722,9 @@ section {
   /* smooth scale from bottom-right */
   transition: transform 0.3s ease-in-out;
   transform-origin: right bottom;
+  position: relative;
+  right: -50px;
+  bottom: -50px;
 }
 
 .project-section-img:hover {
