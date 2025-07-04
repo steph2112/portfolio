@@ -529,7 +529,7 @@ h6 {
   font-style: regular;
 }
 
-#hero .btn-about {
+.btn-default {
   font-family: "Lato", "Inter Placeholder", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -542,10 +542,12 @@ h6 {
   margin-top: 30px;
   color: #fff;
   background: #000000;
+  cursor: pointer;
 }
 
-#hero .btn-about:hover {
+.btn-default:hover {
   background: #3dc8b7;
+  color: #232323;
 }
 
 @media (min-width: 1024px) {
@@ -1704,6 +1706,7 @@ section {
   position: absolute;
   bottom: 30px;
   max-width: 300px;
+  z-index: 1; 
 }
 
 .project-section .text-content h4 {
