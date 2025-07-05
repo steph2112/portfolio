@@ -1988,3 +1988,32 @@ section {
   font-weight: 400;
   color: #323232;
 }
+
+.project-step {
+  border-top: 1px dashed #FF6B3D;
+}
+
+.project-step div {
+  margin-bottom: 20px;
+}
+
+.project-step h1 {
+  margin-bottom: 40px;
+}
+
+.project-step h6 {
+  font-family: "Lato", sans-serif;
+  color: #F4511E;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.project-step p {
+  font-family: "Lato", sans-serif;
+  color: #323232;
+  font-size: 14px;
+  font-style: regular;
+  font-weight: 400;
+  line-height: 28px;
+}
