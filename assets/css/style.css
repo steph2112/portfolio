@@ -23,7 +23,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", "Raleway", sans-serif;
+  font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
+  line-height: 40px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
 }
 
 #main {
@@ -1747,6 +1753,10 @@ section {
   overflow: hidden;
 }
 
+.project-section-full {
+  justify-content: center;
+}
+
 /* Gradient backgrounds */
 .gradient-1 {
   background: linear-gradient(90deg, #d3ffe8 0%, #ffeaff 100%);
@@ -1787,14 +1797,25 @@ section {
 }
 
 .project-section .project-section-img {
-  height: 100%;      /* fill section height */
-  width: auto;       /* maintain aspect ratio */
-  max-width: 60%;    /* fixed max width */
-  margin-left: auto; /* push to right edge */
+  height: 100%;
+  /* fill section height */
+  width: auto;
+  /* maintain aspect ratio */
+  max-width: 60%;
+  /* fixed max width */
+  margin-left: auto;
+  /* push to right edge */
   /* smooth scale from bottom-right */
   transition: transform 0.3s ease-in-out;
   transform-origin: right bottom;
 }
+
+
+.project-section .project-section-img-full {
+  max-width: 100%;
+  margin-left: 0;
+}
+
 
 .project-section-img:hover {
   /* scale up 10% to the right/bottom */
@@ -1885,4 +1906,46 @@ section {
 
 .get-in-touch-content .btn:hover {
   background: #f0b399;
+}
+
+.project-description-container h1 {
+  font-size: 32px;
+  font-weight: 400;
+  font-style: regular;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.project-description .columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.project-description-container.info {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 16px;
+  background-color: #FFE7DF;
+  padding: 40px;
+}
+
+.project-description-container.info h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #252525;
+}
+
+.project-description-container.info p {
+  font-size: 14px;
+  line-height: 14px;
+  color: #474747;
+}
+
+.project-description-container-info {
+  margin-bottom: 10px;
 }
