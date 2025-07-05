@@ -596,8 +596,13 @@ h6 {
 
 /* one-time spin keyframes for hero flowers */
 @keyframes hero-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #hero .flower--tl {
@@ -1755,6 +1760,15 @@ section {
   background: linear-gradient(90deg, #ffe3d0 0%, #fff3e4 100%);
 }
 
+
+.gradient-4 {
+  background: linear-gradient(81.31deg, #B5F1F5 24.77%, #FFCBBB 51.94%, #B2FFF9 80.44%, #C7E6FF 98.51%);
+}
+
+.gradient-5 {
+  background: linear-gradient(81.31deg, #FFFFFF 24.77%, #FFEFD4 43.2%, #C7E6FF 68.98%, #FFB7B7 98.51%);
+}
+
 .project-section .text-content {
   position: absolute;
   bottom: 30px;
@@ -1773,14 +1787,13 @@ section {
 }
 
 .project-section .project-section-img {
-  height: 100%;
-  width: 100%;
+  height: 100%;      /* fill section height */
+  width: auto;       /* maintain aspect ratio */
+  max-width: 60%;    /* fixed max width */
+  margin-left: auto; /* push to right edge */
   /* smooth scale from bottom-right */
   transition: transform 0.3s ease-in-out;
   transform-origin: right bottom;
-  position: relative;
-  right: -50px;
-  bottom: -50px;
 }
 
 .project-section-img:hover {
