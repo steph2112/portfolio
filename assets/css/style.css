@@ -1950,6 +1950,10 @@ section {
   margin-bottom: 10px;
 }
 
+#project-details {
+  margin: 40px auto;
+}
+
 #project-details .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
