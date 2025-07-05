@@ -5,6 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const step = 10;
 
     const carouselSlides = document.getElementById("carousel--slides");
+
+    // I need to duplicate the slides to create a seamless effect
+    const cloneSlides = () => {
+        const originals = Array.from(carouselSlides.children);
+        // e.g. duplicate 3 times
+        for (let j = 0; j < 3; j++) {
+            originals.forEach(slide => {
+                carouselSlides.appendChild(slide.cloneNode(true));
+            });
+        }
+    }
+
     const carouselContainer = document.getElementById("carousel");
 
     const updateCarouselPosition = (shouldBeSmooth) => {
@@ -24,5 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setInterval(nextSlide, 280);
+    cloneSlides(); // Clone slides for seamless effect
 
 })
