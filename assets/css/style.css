@@ -1922,6 +1922,12 @@ section {
   gap: 40px;
 }
 
+.project-description .columns-alt {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
 .project-description-container.info {
   display: grid;
   gap: 40px;
@@ -1948,6 +1954,10 @@ section {
 
 .project-description-container-info {
   margin-bottom: 10px;
+}
+
+.project-description li {
+  line-height: 32px;
 }
 
 #project-details {
@@ -2016,4 +2026,10 @@ section {
   font-style: regular;
   font-weight: 400;
   line-height: 28px;
+}
+
+.project-step .project-step-img-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
 }
