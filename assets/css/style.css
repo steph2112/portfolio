@@ -1953,6 +1953,10 @@ section {
   padding: 25px;
 }
 
+.project-description-container.info-alt {
+  background: #F5CFD5;
+}
+
 .project-description-container.info h6 {
   font-family: "Lato", sans-serif;
   font-size: 14px;
