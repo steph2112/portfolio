@@ -49,8 +49,6 @@
     box-shadow: rgb(255, 255, 255) 0px 3px 0px 0px inset;
     width: 286px;
     height: 333px;
-    cursor: pointer;
-
 }
 
 .carousel--slide--box img {

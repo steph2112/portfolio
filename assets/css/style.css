@@ -2070,3 +2070,25 @@ section {
   /* Reduce blurriness */
   width: 100%;
 }
+
+#about.project-description .project-step {
+  border-top: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about.project-description .project-step h1 {
+  margin-bottom: 20px;
+}
+
+#about.project-description .columns{
+  grid-template-columns: 65% 35%;
+}
+
+#about .hero--icon {
+  height: 50px;
+}
+
+#about-page section {
+  padding: 5px 0;
+}
