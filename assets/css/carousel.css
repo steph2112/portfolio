@@ -45,10 +45,9 @@
 
 .carousel--slide--box {
     position: relative;
-    background-color: rgb(250, 250, 250);
     border-radius: 20px;
     box-shadow: rgb(255, 255, 255) 0px 3px 0px 0px inset;
-    width: 428px;
+    width: 286px;
     height: 333px;
     cursor: pointer;
 
