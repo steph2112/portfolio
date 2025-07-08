@@ -200,7 +200,7 @@ p {
 .nav-menu li:hover>a:before,
 .nav-menu .active>a:before {
   visibility: visible;
-  width: 25px;
+  width: 100%;
 }
 
 .nav-menu a:hover,
@@ -1746,7 +1746,7 @@ section {
   justify-content: space-between;
   padding: 60px;
   color: #000;
-  border-radius: 8px;
+  border-radius: 16px;
   height: 520px;
   margin-bottom: 50px;
   position: relative;
@@ -1759,11 +1759,13 @@ section {
 
 /* Gradient backgrounds */
 .gradient-1 {
-  background: linear-gradient(90deg, #d3ffe8 0%, #ffeaff 100%);
+  background: linear-gradient(81.25deg, #FFFFFF 7.43%, #D2FFDE 28.97%, #58B871 98.83%);
+
 }
 
 .gradient-2 {
-  background: linear-gradient(90deg, #e5f1ff 0%, #fdfcff 100%);
+  background: linear-gradient(261.22deg, #B8C1F5 1.92%, #FFFFFF 97.2%);
+
 }
 
 .gradient-3 {
@@ -1773,10 +1775,11 @@ section {
 
 .gradient-4 {
   background: linear-gradient(81.31deg, #B5F1F5 24.77%, #FFCBBB 51.94%, #B2FFF9 80.44%, #C7E6FF 98.51%);
+
 }
 
 .gradient-5 {
-  background: linear-gradient(81.31deg, #FFFFFF 24.77%, #FFEFD4 43.2%, #C7E6FF 68.98%, #FFB7B7 98.51%);
+  background: linear-gradient(81.31deg, rgba(255, 0, 61, 0.18) 1.02%, rgba(83, 216, 208, 0.32) 50.7%, rgba(249, 127, 88, 0.46) 98.51%);
 }
 
 .project-section .text-content {
@@ -1797,22 +1800,31 @@ section {
 }
 
 .project-section .project-section-img {
-  height: 100%;
   /* fill section height */
   width: auto;
   /* maintain aspect ratio */
-  max-width: 60%;
+  max-width: 70%;
   /* fixed max width */
   margin-left: auto;
   /* push to right edge */
   /* smooth scale from bottom-right */
   transition: transform 0.3s ease-in-out;
   transform-origin: right bottom;
+  image-rendering: -webkit-optimize-contrast;
+  /* For Chrome */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Force GPU acceleration */
+  backface-visibility: hidden;
+  /* Reduce blurriness */
+  width: 100%;
+  /* Ensure proper sizing */
+  height: auto;
+  will-change: transform;
 }
 
 
 .project-section .project-section-img-full {
-  max-width: 100%;
   margin-left: 0;
 }
 
@@ -1909,11 +1921,15 @@ section {
 }
 
 .project-description-container h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 400;
   font-style: regular;
   line-height: 40px;
-  margin-bottom: 20px;
+  margin: 20px 0 35px;
+}
+
+.project-description-container p {
+  font-family: 'Libre Baskerville', serif;
 }
 
 .project-description .columns {
@@ -1933,8 +1949,8 @@ section {
   gap: 40px;
   grid-template-columns: 2fr 1fr;
   border-radius: 16px;
-  background-color: #FFE7DF;
-  padding: 40px;
+  background: #2CC1B84A;
+  padding: 25px;
 }
 
 .project-description-container.info h6 {
@@ -1961,7 +1977,7 @@ section {
 }
 
 #project-details {
-  margin: 40px auto;
+  margin: 10px auto 40px;
 }
 
 #project-details .container {
@@ -2009,6 +2025,7 @@ section {
 
 .project-step h1 {
   margin-bottom: 40px;
+  font-size: 36px;
 }
 
 .project-step h6 {
@@ -2025,11 +2042,27 @@ section {
   font-size: 14px;
   font-style: regular;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 24px;
+  margin-bottom: 48px;
+  max-width: 800px;
 }
 
 .project-step .project-step-img-container {
   display: flex;
   justify-content: center;
   margin: 40px 0;
+}
+
+.project-step .project-step-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  /* For Chrome */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Force GPU acceleration */
+  backface-visibility: hidden;
+  /* Reduce blurriness */
+  width: 100%;
 }
