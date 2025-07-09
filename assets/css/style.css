@@ -1448,11 +1448,13 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #48cfd6;
-  padding: 30px 0;
-  color: #fff;
-  font-size: 14px;
+  font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
+  padding: 16px 0;
+  color: #000000;
+  font-size: 18px;
   text-align: center;
+  border-top: 1px solid #F4511E;
+  margin-top: auto;
 }
 
 #footer .credits {
@@ -2113,3 +2115,11 @@ section {
   color: #FF531D;
   margin-bottom: 25px;
 }
+
+#project-description {
+  padding-bottom: 0;
+}
+
+#contact {
+  padding: 60px 0 1200px;
+} 
