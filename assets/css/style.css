@@ -2085,10 +2085,14 @@ section {
   grid-template-columns: 65% 35%;
 }
 
+#about.project-description .columns-even {
+  grid-template-columns: 50% 50%;
+}
+
 #about .hero--icon {
   height: 50px;
 }
 
-#about-page section {
+#about, #about-page section, #get-in-touch {
   padding: 5px 0;
 }
