@@ -1465,7 +1465,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
-  padding: 16px 0;
+  padding: 16px 0 14px;
   color: #000000;
   font-size: 18px;
   text-align: center;
