@@ -29,6 +29,22 @@ h6 {
 p {
   font-family: "Lato", sans-serif;
   line-height: 24px;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 1%;
+
+}
+
+p strong {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  color: #1D1D1D;
+
 }
 
 #main {
@@ -552,18 +568,29 @@ p {
 
 .btn-default {
   font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
-  font-weight: 500;
-  font-size: 18px;
   letter-spacing: 1px;
-  line-height: 140%;
   display: inline-block;
-  padding: 9px 20px 10px;
-  border-radius: 24px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
+  color: #F6F5F1;
   background: #000000;
   cursor: pointer;
+
+  gap: 10px;
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+
+
+  font-weight: 400;
+  font-style: regular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2%;
+
+
 }
 
 .btn {
@@ -2143,7 +2170,22 @@ section {
 }
 
 #about.project-description .project-step h1 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 69px;
+  letter-spacing: 2%;
+
+}
+
+#about.project-description .project-step p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  color: #1D1D1D;
 }
 
 #about.project-description .columns {
@@ -2155,7 +2197,7 @@ section {
 }
 
 #about .hero--icon {
-  height: 50px;
+  height: 54px;
 }
 
 #about,
@@ -2209,6 +2251,6 @@ section {
   margin-bottom: 0;
 }
 
-#about #project-step .btn-default {
+#about.project-description #project-step .btn-default {
   margin: 20px 15px;
 }
