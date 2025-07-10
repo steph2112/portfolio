@@ -47,23 +47,6 @@ p strong {
 
 }
 
-img {
-  object-fit: contain;
-  object-position: center;
-  aspect-ratio: auto 1582 / 1187;
-
-
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  /* Chrome/Safari */
-  image-rendering: pixelated;
-  /* Firefox */
-  /* -ms-interpolation-mode: nearest-neighbor; */
-  /* Force GPU acceleration */
-  /* backface-visibility: hidden; */
-}
-
 #main {
   margin-top: 50px;
 }
@@ -2172,8 +2155,14 @@ section {
   width: 100%;
   height: auto;
   image-rendering: -webkit-optimize-contrast;
-  /* Reduce blurriness */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  backface-visibility: hidden;
   width: 100%;
+}
+
+.project-step .project-step-img.full {
+  width: 200%;
 }
 
 #about.project-description .project-step {
