@@ -1478,9 +1478,13 @@ section {
   font-size: 13px;
 }
 
-#footer .credits a {
-  color: #fff;
+#footer a,
+#footer a:hover {
+  color: #000;
+  text-decoration: underline;
+  margin: 0 5px;
 }
+
 
 /*--------------------------------------------------------------
 # Cover presentation
