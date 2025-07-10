@@ -2164,6 +2164,10 @@ section {
   width: 200%;
 }
 
+.project-step .project-step-img.semi-full {
+  width: 150%;
+}
+
 #about.project-description .project-step {
   border-top: none;
   margin: 60px auto;
