@@ -2169,3 +2169,29 @@ section {
 #contact {
   padding: 60px 0 1200px;
 }
+
+#about #project-step .project-section {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+#about #project-step .project-section .project-section-img {
+  max-width: 80%;
+}
+
+#about #project-step .project-description {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 37px;
+  letter-spacing: 2%;
+  vertical-align: middle;
+
+  padding: 0 18px;
+  margin-bottom: 0;
+}
+
+#about #project-step .btn-default {
+  margin: 20px 15px;
+}
