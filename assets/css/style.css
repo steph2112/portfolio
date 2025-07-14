@@ -2308,3 +2308,79 @@ section {
 #about.project-description #project-step .btn-default {
   margin: 20px 15px;
 }
+
+#login-container {
+  width: 423px;
+  opacity: 1;
+  border-radius: 16px;
+  background: #F6F5F1;
+  box-shadow: 0px 4px 4px 0px #00000014;
+  margin: 200px auto;
+  padding: 45px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login {
+  background: #ffffff;
+}
+
+#login-container img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 20px;
+}
+
+#login-container h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 2%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+#login-container input {
+  width: 303px;
+  height: 48px;
+  opacity: 1;
+  border-width: 1px;
+  border-radius: 16px;
+  background: #EEEDE9;
+  margin-bottom: 20px;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+#login-container button {
+  font-family: "Libre Baskerville", serif;
+  width: 303px;
+  height: 44px;
+  opacity: 1;
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  gap: 10px;
+  color: #F6F5F1;
+  background: #000000;
+  margin-bottom: 20px;
+}
+
+#login-container button:disabled {
+  color: #FFFFFF;
+  background: #C9C9C9;
+}
+
+#login-container #error-message {
+  color: rgb(209, 24, 24);
+  font-size: 14px;
+  margin-top: 5px;
+margin-bottom: 20px;
+}

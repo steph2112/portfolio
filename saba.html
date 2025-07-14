@@ -477,11 +477,9 @@
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/carousel.js"></script>
+        <script src="assets/js/index.js"></script>
         <script>
-            window.onload = () => {
-                //  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-                //     src="https://embed.figma.com/board/2oy4sRjeL10mftfSUD3Wd3/Sitemaps-Practice--Community-?node-id=0-1&embed-host=share"
-                //   allowfullscreen></iframe>
+            window.addEventListener('load', function () {
                 const iframe = document.createElement("iframe");
                 iframe.style.border = "1px solid rgba(0, 0, 0, 0.1)";
                 iframe.width = "1000";
@@ -489,7 +487,6 @@
                 iframe.src = "https://embed.figma.com/board/2oy4sRjeL10mftfSUD3Wd3/Sitemaps-Practice--Community-?node-id=0-1&embed-host=share";
                 iframe.allowFullscreen = true;
                 document.getElementById("ia-iframe").appendChild(iframe);
-
-            };
+            });
         </script>
 </body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3T3JJMLHD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-X3T3JJMLHD');
+    </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Steph Briceno</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/fonts.css" rel="stylesheet">
+    <link href="assets/css/carousel.css" rel="stylesheet">
+
+    <!-- Other links -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+</head>
+
+<body id="login">
+    <div id="login-container">
+
+        <img src="assets/img/lock.png" alt="Login" />
+        <h1>Please enter the password to access Steph’s portfolio 😊</h1>
+        <input type="password" id="token-input" />
+        <p id="error-message"></p>
+        <button id="login-button" onclick="login()" disabled>Submit</button>
+
+    </div>
+</body>
+
+<script>
+    window.addEventListener('load', function () {
+        const input = document.getElementById('token-input');
+        const button = document.getElementById('login-button');
+
+        input.focus();
+
+        input.addEventListener('input', function () {
+            if (input.value.length >= 7) {
+                button.disabled = false;
+            } else {
+                button.disabled = true;
+            }
+        });
+    });
+</script>
+<script src="assets/js/index.js"></script>
