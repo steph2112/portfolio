@@ -9,6 +9,7 @@ window.addEventListener('load', function () {
         if (window.location.pathname === '/login') {
             return;
         }
+        sessionStorage.setItem('redirectAfterLogin', window.location.pathname);
         window.location.href = 'login.html';
     }
 })
@@ -24,5 +25,8 @@ function login() {
     }
     document.getElementById('error-message').innerHTML = "";
     localStorage.setItem('userToken', token);
-    window.location.href = 'index.html';
+    
+    const redirectAfterLogin = sessionStorage.getItem('redirectAfterLogin');
+    sessionStorage.removeItem('redirectAfterLogin');
+    window.location.href = redirectAfterLogin || 'index.html';
 }
