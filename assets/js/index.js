@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 
     const expected = atob(base64);
     if (!token || token !== expected) {
-        if (window.location.pathname === '/login') {
+        if (window.location.pathname.includes("login")) {
             return;
         }
         sessionStorage.setItem('redirectAfterLogin', window.location.pathname);
@@ -25,7 +25,7 @@ function login() {
     }
     document.getElementById('error-message').innerHTML = "";
     localStorage.setItem('userToken', token);
-    
+
     const redirectAfterLogin = sessionStorage.getItem('redirectAfterLogin');
     sessionStorage.removeItem('redirectAfterLogin');
     window.location.href = redirectAfterLogin || 'index.html';
