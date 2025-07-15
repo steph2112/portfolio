@@ -2311,7 +2311,7 @@ section {
 }
 
 #login-container {
-  width: 423px;
+  width: 460px;
   opacity: 1;
   border-radius: 16px;
   background: #F6F5F1;
@@ -2383,5 +2383,20 @@ section {
   color: rgb(209, 24, 24);
   font-size: 14px;
   margin-top: 5px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#login-container p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+#login-container p strong:hover {
+  color: #FF531D;
 }
